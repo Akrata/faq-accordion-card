@@ -1,0 +1,88 @@
+:root{
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    max-width: 375px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    
+    
+}
+.body{
+background: no-repeat linear-gradient(var(--soft-violet),var(--soft-blue));
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.main{
+    background: white;
+    border-radius: 20px;
+    margin: 140px 20px 20px 20px;
+    flex-grow: 1;
+    color: hsl(238, 29%, 16%);
+    padding-bottom: 20px;
+    
+}
+
+.faqs{
+padding: 0px 20px;
+font-weight: 400px;
+
+}
+.image{
+position: absolute;
+top:40px;
+left:40px;
+
+}
+.image-shadow{
+    position: absolute;
+    top:70px;
+    left:40px;
+    opacity: 0.1;
+}
+
+h1 {
+    margin-top: 140px;
+    text-align: center;
+    font-size: 35px;
+}
+hr{
+    border-top:solid 0.1px hsl(0, 4%, 91%);
+}
+
+.accordion{
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    padding: 10px 0px;  
+    font-size: 14px;
+    font-weight: 400;
+    color: #505156;
+    font-family: 'Kumbh Sans', sans-serif;
+
+
+}
+
+.accordion::after{
+    content: url(images/icon-arrow-down.svg);
+    float: right;
+}
+
+.accordion:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    
+}
+.panel {
+    /* border-bottom: solid 1px hsl(240, 5%, 91%); */
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 13px;
+    color: #A3A2A7;
+    
+}
